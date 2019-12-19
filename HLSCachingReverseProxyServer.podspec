@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
 
   s.dependency "GCDWebServer", "~> 3.5"
   s.dependency "PINCache", ">= 3.0.1-beta.3"
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.11"
